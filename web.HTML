@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>A Clicker Game</title>
-</head>
-
-<body>
-  <div id="content"></div>
-  <script src="bundle.js"></script>
-
-  <hr>
-  <p align="center"><a href="https://github.com/kroepic/clicker-game">View on Github</a></p>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-47993702-2', 'auto');
-    ga('send', 'pageview');
-  
-  </script>
-</body>
-
+  <head>
+    <title>Clicker Game</title>
+  </head>
+  <body>
+    <h1>Welcome to the Clicker Game!</h1>
+    <button onclick="click()">Click</button>
+    <p id="clicks"></p>
+    <script src="clicker_game.js"></script>
+    <script>
+      var clicks = 0;
+      function click() {
+        clicks++;
+        document.getElementById("clicks").innerHTML = "Clicks: " + clicks;
+      }
+    </script>
+  </body>
 </html>
