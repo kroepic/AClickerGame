@@ -1,19 +1,2 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Clicker Game</title>
-  </head>
-  <body>
-    <h1>Welcome to the Clicker Game!</h1>
-    <button onclick="click()">Click</button>
-    <p id="clicks"></p>
-    <script src="clicker_game.js"></script>
-    <script>
-      var clicks = 0;
-      function click() {
-        clicks++;
-        document.getElementById("clicks").innerHTML = "Clicks: " + clicks;
-      }
-    </script>
-  </body>
-</html>
+<div id="score">0</div>
+<button id="clicker">Click Me</button>
